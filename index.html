@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
-    <link rel="icon" href="devchallenges.png" />
+	<link rel="icon" href="devchallenges.png"/>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+	<link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
 
-    <title>Devchallenges</title>
+	<title>Devchallenges</title>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+	<style>
+		/* Work with widths and heights easier */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
 
-      ul {
-        padding-left: 24px;
-      }
+		/* Consistent fonts across your UI */
+		body,
+		input,
+		button,
+		select,
+		textarea {
+			font: 400 1rem Poppins;
+			color: #222222;
+		}
 
-      li {
-        margin-bottom: 8px;
-      }
+		/* Handle underline on hover yourself */
+		a { text-decoration: none; }
+		a:link { color: #6A26CD; }
+		a:hover { color: #431488; }
+		a:active { color: #6A26CD; }
+		a:visited { color: #6A26CD; }
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
+		/* Perfectly spaced list */
+		ul,
+		ol {
+			margin: 0 0 1rem;
+			padding: 0 0 1rem;
+		}
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
+		nav {
+			padding: 1rem;
+		}
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
+		img {
+			object-fit: contain;
+		}
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
+		.img-404 {
+			width: 50%;
+			height: auto;
+			padding: 2rem 5rem 5rem;
+		}
 
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+		.row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: 0;
+			margin-left: 0;
+		}
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
+		.col-1 {
+			position: relative;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			-ms-flex: 0 0 8.333333%;
+			flex: 0 0 8.333333%;
+			max-width: 8.333333%;
+		}
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
-  </body>
+		@media (min-width: 768px) {
+			.mrg-md {
+				margin-top: 5rem;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="row">
+		<p>404 NOT FOUND</p>
+	</nav>
+	<div class="row mrg-md">
+		<img src="Scarecrow.png" class="img-404"/>
+		<div>
+			<h1>I have bad news for you</h1>
+			<h6>The page you are looking for might be removed or is temporarily unavailable</h6>
+			<button>BACK TO HOMEPAGE</button>
+		</div>
+	</div>
+</body>
 </html>
