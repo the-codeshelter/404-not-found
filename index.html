@@ -39,11 +39,17 @@
 		.img-404 {
 			width: 100%;
 			height: auto;
+			padding: 1rem;
 		}
 
 		.box {
 			padding: 1.25rem 4vw;
-			max-width: 50%;
+			max-width: 100%;
+		}
+
+		.box-img {
+			padding: 1.25rem 4vw;
+			max-width: 100%;
 		}
 
 		.row {
@@ -57,12 +63,12 @@
 
 		h1 {
 			font-weight: 700;
-			max-width: 20rem;
+			max-width: 100%;
 			line-height: 3.5rem;
 		}
 
 		h6 {
-			max-width: 12rem;
+			max-width: 75%;
 			line-height: 1.25rem;
 		}
 
@@ -82,17 +88,45 @@
 			.mrg-md {
 				margin-top: 3rem;
 			}
+
+			.box {
+				max-width: 50%;
+			}
+
+			.box-img {
+				padding: 1.25rem 4vw;
+				max-width: 50%;
+			}
+
+			h1 {
+				font-weight: 700;
+				max-width: 20rem;
+				line-height: 3.5rem;
+			}
+
+			h6 {
+				max-width: 12rem;
+				line-height: 1.25rem;
+			}
+
+			.img-404 {
+				padding: 0;
+			};
 		}
 
 		@media (min-width: 768px) {
 			.mrg-md {
 				margin-top: 5rem;
 			}
+
+			.img-404 {
+				padding: 0 4vw 0 2vw;
+			};
 		}
 
 		@media (min-width: 992px) {
 			.img-404 {
-				padding: 0 8vw 12vw 4vw
+				padding: 0 8vw 0 6vw;
 			};
 		}
 
@@ -103,7 +137,7 @@
 		<p>404 NOT FOUND</p>
 	</nav>
 	<div class="row mrg-md">
-		<div class="box">
+		<div class="box-img">
 			<img src="Scarecrow.png" class="img-404"/>
 		</div>
 		<div class="box">
