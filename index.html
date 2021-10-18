@@ -15,14 +15,16 @@
 	<title>Devchallenges</title>
 
 	<style>
-		/* Work with widths and heights easier */
 		* {
 			box-sizing: border-box;
 			margin: 0;
 			padding: 0;
 		}
 
-		body, button {
+		body {
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
 			font-family: 'Noto Sans Mono', sans-serif;
 			color: #333;
 		}
@@ -43,6 +45,10 @@
 		}
 
 		.box {
+			padding: 1.25rem 4vw;
+		}
+
+		.box-p {
 			padding: 1.25rem 4vw;
 			max-width: 100%;
 		}
@@ -73,6 +79,7 @@
 		}
 
 		.btn {
+			font-family: 'Noto Sans Mono', sans-serif;
 			padding: 1rem 2rem;
 			background-color: #333;
 			border: none;
@@ -84,12 +91,28 @@
 			margin-top: 2rem;
 		}
 
+		footer {
+			font-family: 'Montserrat', sans-serif;
+			color: #BDBDBD;
+			text-align: center;
+			margin-top: auto;
+			font-size: 0.75rem;
+		}
+
+		footer a, footer a:visited {
+			color: inherit;
+		}
+
+		footer a:hover {
+			color: #333;
+		}
+
 		@media (min-width: 576px) {
 			.mrg-md {
 				margin-top: 3rem;
 			}
 
-			.box {
+			.box-p {
 				max-width: 50%;
 			}
 
@@ -111,7 +134,11 @@
 
 			.img-404 {
 				padding: 0;
-			};
+			}
+
+			footer {
+				font-size: 2vw;
+			}
 		}
 
 		@media (min-width: 768px) {
@@ -121,13 +148,17 @@
 
 			.img-404 {
 				padding: 0 4vw 0 2vw;
-			};
+			}
+
+			footer {
+				font-size: 1rem;
+			}
 		}
 
 		@media (min-width: 992px) {
 			.img-404 {
 				padding: 0 8vw 0 6vw;
-			};
+			}
 		}
 
 	</style>
@@ -140,11 +171,14 @@
 		<div class="box-img">
 			<img src="Scarecrow.png" class="img-404"/>
 		</div>
-		<div class="box">
+		<div class="box-p">
 			<h1>I have bad news for you</h1>
 			<h6 class="mt-4">The page you are looking for might be removed or is temporarily unavailable</h6>
 			<button class="btn mt-4">BACK TO HOMEPAGE</button>
 		</div>
 	</div>
+	<footer class="box">
+		<p>created by <a href="https://github.com/the-codeshelter">the-codeshelter</a> - devChallenges.io</p>
+	</footer>
 </body>
 </html>
