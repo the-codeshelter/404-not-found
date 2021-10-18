@@ -8,7 +8,9 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
 
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
 
 	<title>Devchallenges</title>
 
@@ -20,32 +22,14 @@
 			padding: 0;
 		}
 
-		/* Consistent fonts across your UI */
-		body,
-		input,
-		button,
-		select,
-		textarea {
-			font: 400 1rem Poppins;
-			color: #222222;
-		}
-
-		/* Handle underline on hover yourself */
-		a { text-decoration: none; }
-		a:link { color: #6A26CD; }
-		a:hover { color: #431488; }
-		a:active { color: #6A26CD; }
-		a:visited { color: #6A26CD; }
-
-		/* Perfectly spaced list */
-		ul,
-		ol {
-			margin: 0 0 1rem;
-			padding: 0 0 1rem;
+		body, button {
+			font-family: 'Noto Sans Mono', sans-serif;
+			color: #333;
 		}
 
 		nav {
-			padding: 1rem;
+			font-family: 'Inconsolata', sans-serif;
+			font-weight: 700;
 		}
 
 		img {
@@ -53,9 +37,13 @@
 		}
 
 		.img-404 {
-			width: 50%;
+			width: 100%;
 			height: auto;
-			padding: 2rem 5rem 5rem;
+		}
+
+		.box {
+			padding: 1.25rem 4vw;
+			max-width: 50%;
 		}
 
 		.row {
@@ -67,14 +55,33 @@
 			margin-left: 0;
 		}
 
-		.col-1 {
-			position: relative;
-			width: 100%;
-			padding-right: 15px;
-			padding-left: 15px;
-			-ms-flex: 0 0 8.333333%;
-			flex: 0 0 8.333333%;
-			max-width: 8.333333%;
+		h1 {
+			font-weight: 700;
+			max-width: 20rem;
+			line-height: 3.5rem;
+		}
+
+		h6 {
+			max-width: 12rem;
+			line-height: 1.25rem;
+		}
+
+		.btn {
+			padding: 1rem 2rem;
+			background-color: #333;
+			border: none;
+			color: #FFF;
+			font-size: 12px;
+		}
+
+		.mt-4 {
+			margin-top: 2rem;
+		}
+
+		@media (min-width: 576px) {
+			.mrg-md {
+				margin-top: 3rem;
+			}
 		}
 
 		@media (min-width: 768px) {
@@ -83,18 +90,26 @@
 			}
 		}
 
+		@media (min-width: 992px) {
+			.img-404 {
+				padding: 0 8vw 12vw 4vw
+			};
+		}
+
 	</style>
 </head>
 <body>
-	<nav class="row">
+	<nav class="row box">
 		<p>404 NOT FOUND</p>
 	</nav>
 	<div class="row mrg-md">
-		<img src="Scarecrow.png" class="img-404"/>
-		<div>
+		<div class="box">
+			<img src="Scarecrow.png" class="img-404"/>
+		</div>
+		<div class="box">
 			<h1>I have bad news for you</h1>
-			<h6>The page you are looking for might be removed or is temporarily unavailable</h6>
-			<button>BACK TO HOMEPAGE</button>
+			<h6 class="mt-4">The page you are looking for might be removed or is temporarily unavailable</h6>
+			<button class="btn mt-4">BACK TO HOMEPAGE</button>
 		</div>
 	</div>
 </body>
