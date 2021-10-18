@@ -47,7 +47,10 @@ This is the first step to learn deeper about responsive web development. I learn
 
 -   HTML
 -   CSS
--   [Google Fonts](https://fonts.google.com/)
+-   Fonts from [Google Fonts](https://fonts.google.com/)
+    -   [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
+    -   [Noto Sans Mono](https://fonts.google.com/noto/specimen/Noto+Sans+Mono)
+    -   [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 ## Features
 
@@ -60,8 +63,8 @@ This application/site was created as a submission to a [DevChallenges](https://d
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
 -   [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
--   [(Stackoverflow) Body not on top of page](https://stackoverflow.com/questions/19080185/html-body-is-not-at-the-top-of-the-page-even-with-margin-set-to-0)
--   [(Stackoverflow) Footer on bottom of the page](https://stackoverflow.com/questions/34796085/how-to-stick-footer-to-bottom-not-fixed-even-with-scrolling/34796186)
+-   [Body not on top of the page (Stackoverflow)](https://stackoverflow.com/questions/19080185/html-body-is-not-at-the-top-of-the-page-even-with-margin-set-to-0)
+-   [Footer on bottom of the page (Stackoverflow)](https://stackoverflow.com/questions/34796085/how-to-stick-footer-to-bottom-not-fixed-even-with-scrolling/34796186)
 
 ## Contact
 
