@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://the-codeshelter.github.io">
+    <a href="https://the-codeshelter.github.io/404-not-found/">
       Demo
     </a>
     <span> | </span>
